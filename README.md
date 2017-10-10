@@ -1,2 +1,2 @@
-# javascript-calculator
+# JavaScript Calculator
 FCC advanced project
