@@ -1,0 +1,32 @@
+/*********************************
+General
+*********************************/
+body {
+  background-color: #64b5f6;
+  padding-top: 150px;
+}
+
+/*********************************
+Calculator
+*********************************/
+#myECalculator{
+  background-color: #fbc02d;
+  width: 280px;
+  border: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  border-color: #000000;
+  margin: auto;
+  text-align: center;
+  padding: 5px 25px 10px 15px;
+}
+
+/*********************************
+Footer
+*********************************/
+footer {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
