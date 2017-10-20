@@ -1,6 +1,7 @@
 /*********************************
 General
 *********************************/
+
 body {
   font-family: "Lato", serif, sans-serif;
   background-color: #64b5f6;
@@ -10,7 +11,8 @@ body {
 /*********************************
 Calculator
 *********************************/
-#myECalculator{
+
+#myECalculator {
   background-color: #fbc02d;
   width: 300px;
   border: solid;
@@ -25,16 +27,27 @@ Calculator
 #calculatorTitle {
   padding-top: 10px;
   font-size: 25px;
-  color: black;
+  color: #000000;
+}
+
+#resultScreen {
+  height: 50px;
+  margin: 5px -15px 5px 0px;
+  text-align: right;
+  border-color: #33691e;
+  border-style: solid;
+  background-color: #f1f8e9;
+  font-size: 20px
 }
 
 /*********************************
 buttons
 *********************************/
+
 .btns {
   background-color: #388e3c;
   border-color: #aed581;
-  color: black;
+  color: #000000;
   padding: 5px;
   height: 50px;
   width: 50px;
@@ -47,7 +60,7 @@ buttons
 #zero {
   background-color: #388e3c;
   border-color: #aed581;
-  color: black;
+  color: #000000;
   padding: 5px;
   height: 50px;
   width: 115px;
@@ -60,9 +73,10 @@ buttons
 /*********************************
 Footer
 *********************************/
+
 footer {
   margin-top: 50px;
   width: 100%;
   text-align: center;
-  color: black;
+  color: #000000;
 }
