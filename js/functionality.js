@@ -14,5 +14,15 @@ var operationObjects = {
 }
 
 $(document).ready(function() {
+  // function to show button values on calculator screen
+  function displayResults(calculatorInput) {
+    var inputHtml = calculatorInput;
+    $(".showResult").html(inputHtml);
+  }
   
+  $("button").click(function() {
+    var value = $(this).attr("value");
+    userInput = userInput.concat(String(value));
+    displayResults(userInput);
+  });
 });
