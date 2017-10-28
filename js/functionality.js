@@ -13,16 +13,28 @@ var operationObjects = {
   "plus" : "+"
 }
 
+// show button values on calculator screen
+function displayResults(calculatorInput) {
+  var inputHtml = calculatorInput;
+  $(".showResult").html(inputHtml);
+}
+
 $(document).ready(function() {
-  // function to show button values on calculator screen
-  function displayResults(calculatorInput) {
-    var inputHtml = calculatorInput;
-    $(".showResult").html(inputHtml);
-  }
-  
   $("button").click(function() {
     var value = $(this).attr("value");
-    userInput = userInput.concat(String(value));
-    displayResults(userInput);
+    
+    if (!isNaN(value)) {
+      userInput = userInput.concat(String(value));
+      displayResults(userInput);
+    } else if (value === "ac") { // clear calculator screen when 'AC' is pressed
+      operationResult = "";
+      actualOperation = "";
+      userInput = "";
+      arrayInput = [];
+      display = "";
+      stringOperation = "";
+      displayResults(userInput);
+    }
+    
   });
 });
