@@ -34,6 +34,11 @@ $(document).ready(function() {
       display = "";
       stringOperation = "";
       displayResults(userInput);
+    } else if (userInput !== "") {
+      if (value === "ce") {
+        userInput = userInput.slice(0, -1);
+        displayResults(userInput);
+      }
     }
     
   });
