@@ -38,6 +38,11 @@ $(document).ready(function() {
       if (value === "ce") {
         userInput = userInput.slice(0, -1);
         displayResults(userInput);
+      } else if (value in operationObjects) {
+        actualOperation = operationObjects[value];
+        arrayInput.push(userInput);
+        arrayInput.push(actualOperation);
+        userInput = "";
       }
     }
     
